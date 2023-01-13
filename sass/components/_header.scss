@@ -1,0 +1,129 @@
+.nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 50px;
+    margin: 32px 93px;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav ul {
+    padding: 17px 0;
+    gap: 10px;
+    margin: 0;
+  }
+
+  ul.selector {
+    gap: 50px;
+  }
+}
+
+/*.header_off {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+.left__header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .left__header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .left__header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav {
+    ul {
+      padding: 32px 0;
+      gap: 50px;
+    }
+
+    .selector {
+      margin-left: -190px;
+    }
+  }
+
+  .phone .icon__nav {
+    margin-right: 0px;
+  }
+}
+
+.nav__link--style,
+.nav__link__ad--style {
+  color: var(--link-title-color);
+  font-weight: 500px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.selector .nav__menu {
+  position: relative;
+}
+
+.visit::after {
+  position: absolute;
+  content: '';
+  top: 44px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--change-color);
+}
+
+.selector .visit:visited {
+  color: var(--change-color);
+}
+
+.nav__link__ad--style {
+  color: var(--link-ad-description-color);
+}
+
+.nav__menu,
+.nav__menu__address {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.nav .left__header {
+  margin-right: 15px;
+}
+
+.icon__nav {
+  width: 16px;
+  max-height: 15px;
+  margin-right: 5px;
+  fill: var(--link-ad-description-color);
+}
+
+.phone .icon__nav {
+  margin-right: 15px;
+}
+
+.nav__link__ad--style:hover .icon__nav {
+  fill: var(--change-color);
+  color: var(--change-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

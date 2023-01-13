@@ -1,0 +1,106 @@
+.banner {
+  background-color: var(--text-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url(../images/banner-index-desktop.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url('../images/banner-index-desktop@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 180px) and (max-width: 480px) {
+
+  .banner,
+  hr {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-color: var(--text-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url(../images/banner-index-table.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .banner {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url('../images/banner-index-table@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-color: var(--text-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/banner-index-desktop.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .banner {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.7)), url('../images/banner-index-desktop@2x.jpg');
+    }
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  h1 {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--body-background-color);
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    gap: 41px;
+
+    h1 {
+      font-size: 44px;
+      line-height: 60px;
+      padding-top: 207px;
+    }
+  }
+}
+
+#button-index {
+  background: var(--change-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--body-background-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px 2px;
+  letter-spacing: 0.06em;
+  border: 0;
+}

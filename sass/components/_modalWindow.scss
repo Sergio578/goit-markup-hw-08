@@ -1,0 +1,226 @@
+.backdrop {
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 78%;
+  background-color: var(--body-background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--link-ad-description-color);
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+span {
+  position: absolute;
+  top: -25%;
+  left: 49px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+
+.form__label input,
+.acept__terms input {
+  margin-top: 5px;
+  margin-left: 49px;
+  padding: 12px 16px 12px 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+}
+
+.form__label input {
+  width: 100%;
+  margin-right: 49px;
+}
+
+.form--icon {
+  position: absolute;
+  top: 60%;
+  left: 65px;
+  transform: translateY(-50%);
+}
+
+.comment {
+  position: absolute;
+  top: -13%;
+  left: 49px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-left: 49px;
+  margin-right: 49px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  resize: none;
+
+  &:focus {
+    border-color: var(--change-color);
+    outline: 0 none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+  visibility: hidden;
+}
+
+.icon__check {
+  position: absolute;
+  top: 3px;
+  width: 13px;
+  height: 12px;
+  border: 2px solid var(--text-color);
+  border-radius: 4px;
+}
+
+.checkbox:checked+.icon__check {
+  background-color: var(--change-color);
+  background-image: url(../images/icon-check.svg);
+  border-color: transparent;
+  background-size: contain;
+  background-origin: border-box;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.acept__terms {
+  position: relative;
+  display: flex;
+  margin-top: -22px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  gap: 5px;
+}
+
+.acept__terms__text {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--link-ad-description-color);
+}
+
+.button--form {
+  width: 180px;
+  height: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  background: var(--change-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--body-background-color);
+  border: 0;
+}
+
+input:focus-within {
+  border-color: var(--change-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__label:focus-within {
+  fill: var(--change-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#button-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  transform: translate(50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--body-background-color);
+
+  &:hover {
+    color: var(--change-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+
+  .form__label input {
+    width: 370px;
+    margin-right: 0;
+  }
+
+  textarea {
+    width: 397px;
+    margin-right: 0;
+  }
+}

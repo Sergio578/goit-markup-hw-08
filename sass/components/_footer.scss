@@ -1,0 +1,240 @@
+.banner__footer {
+  background: var(--title-footer-background);
+}
+
+/*@media screen and (min-width: 180px) and (max-width: 480px) {
+  .banner__footer {
+    width: 480px;
+  }
+}*/
+
+.footer--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+footer p {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--body-background-color);
+  text-align: center;
+  margin: 0;
+}
+
+.footer__city,
+.footer__contact {
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--body-background-color);
+}
+
+.footer__city {
+  margin-top: 9px;
+  line-height: 24px;
+}
+
+.footer__contact {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--title-footer-background);
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+  gap: 20px;
+}
+
+.social__links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 10px;
+
+  a {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  .team__social__icon {
+    fill: var(--body-background-color);
+  }
+
+  a:hover {
+    background-color: var(--change-color);
+  }
+}
+
+.footer--subs {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.footer__email {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.box__email {
+  background-color: var(--title-footer-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  color: var(--body-background-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .box__email {
+    width: 60%;
+    margin-left: 135px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box__email {
+    margin-left: 0;
+  }
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 39px;
+  margin-bottom: 60px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--body-background-color);
+  background-color: var(--change-color);
+  border-color: var(--text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__button {
+    width: 200px;
+    margin-left: 250px;
+    padding: 0;
+  }
+}
+
+.footer__send {
+  display: block;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer--flex--distribution {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 65px;
+    margin-top: 65px;
+  }
+
+  .social {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .footer__address {
+    padding-top: 0;
+  }
+
+  .social .footer--subs {
+    margin-top: 54px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer--flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer--flex--distribution {
+    display: flex;
+    padding: 0;
+    margin-top: 65px;
+    gap: 120px;
+  }
+
+  .footer__address {
+    padding-bottom: 47px;
+    align-items: flex-start;
+  }
+
+  footer p {
+    text-align: left;
+  }
+
+  .footer__city,
+  .footer__contact {
+    line-height: 24px;
+  }
+
+  .footer__city {
+    margin-top: 20px;
+  }
+
+  .social {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+
+    .footer--subs {
+      margin-top: 65px;
+      margin-left: 93px;
+    }
+  }
+
+  .footer__email {
+    display: flex;
+    flex-direction: row;
+    margin-left: 93px;
+  }
+
+  .box__email {
+    width: 358px;
+    margin-bottom: 0px;
+  }
+
+  .footer__button {
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-left: 10px 45px;
+  }
+}

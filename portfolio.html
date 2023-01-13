@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea módulo 8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+     <header>
+      <div class="container">
+        <!--<div class="header_off">-->
+          <nav class="nav">
+            <a class="logo" href="./index.html">WebStudio</a>
+            <button
+              class="menu__toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+            <svg
+             width="24"
+             height="24"        
+             viewBox="0 0 20 20"
+             xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+            </svg>
+            </button>
+            <ul class="selector">
+              <li class="nav__menu">
+                <a class="nav__link--style" href="./index.html">Estudio</a>
+              </li>
+              <li class="nav__menu">
+                <a class="nav__link--style visit" href="./portfolio.html">Portafolio</a>
+              </li>
+              <li class="nav__menu"><a class="nav__link--style" href="#">Contactos</a></li>
+            </ul>
+            
+            <ul class="left__header">
+              <li class="nav__menu__address">
+                <a class="nav__link__ad--style" href="mailto:info@devstudio.com"
+                ><svg class="icon__nav">
+                  <use href="./images/icons.svg#message"></use>
+                </svg>info@devstudio.com</a
+                >
+              </li>
+              <li class="nav__menu__address">
+                <a class="nav__link__ad--style" href="tel:+525555296000"><svg class="icon__nav">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>+52 55 5529 6000</a>
+              </li>
+            </ul>
+          </nav>
+          <!--</div>-->          
+
+        <div class="menu__container js-menu-container" id="mobile-menu">
+        <button class="menu__toggle js-close-menu">
+          <svg          
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+          </svg>
+        </button>
+        <div class="mobile">
+        <ul class="mobile__menu mobile__nav">
+          <li class="mobile__nav--style">
+            <a class="nav__link--style" href="./index.html">Estudio</a>
+          </li>
+          <li class="mobile__nav--style">
+            <a class="nav__link--style select" href="./portfolio.html">Portafolio</a>
+          </li>
+          <li class="mobile__nav--style"><a class="nav__link--style" href="#">Contactos</a></li>
+        </ul>
+            
+        <ul class="mobile__menu mobile__address">
+          <li class="mobile__address__contact">
+            <a class="nav__link__ad--style" href="tel:+525555296000">
+            +52 55 5529 6000</a>
+          </li>
+          <li class="mobile__address__contact">
+            <a class="nav__link__ad--style" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile__menu mobile__social">
+          <li>
+            <a class="mobile__social__link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+          </li>|
+          <li>
+            <a class="mobile__social__link" href="https://www.instagram.com/" target="_blank">Twitter</a>
+          </li>|
+          <li>
+            <a class="mobile__social__link" href="https://www.instagram.com/" target="_blank">Facebook</a>
+          </li>|
+          <li>
+            <a class="mobile__social__link" href="https://www.instagram.com/" target="_blank">LinkedIn</a>
+          </li>
+        </ul>
+        </div>
+        </div>
+      </div>        
+    </header>
+    <hr />
+    <main>
+      <section class="section container">
+        <div class="button">
+          <ul>
+            <li class="none__style">
+              <button class="button--buttons" type="button" name="Todo">Todo</button>
+            </li>
+            <li class="none__style">
+              <button class="button--buttons" type="button" name="Sitios-web">
+                Sitios-web
+              </button>
+            </li>
+            <li class="none__style">
+              <button class="button--buttons" type="button" name="Aplicaciones">
+                Aplicaciones
+              </button>
+            </li>
+            <li class="none__style">
+              <button class="button--buttons" type="button" name="Diseño">
+                Diseño
+              </button>
+            </li>
+            <li class="none__style">
+              <button class="button--buttons" type="button" name="Marketing">
+                Marketing
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section container">
+        <ul class="adjust__img">
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+                <img
+                  src="./images/web-site-tecnoduck.jpg"
+                  srcset="images\portfolio-desktop\desktop-web-site-tecnoduck 1x.webp 2700w, images\portfolio-desktop\desktop-web-site-tecnoduck@2x.webp 2700w, images\portfolio-table\table-web-site-tecnoduck 1x.webp 767w, images\portfolio-table\table-web-site-tecnoduck@2x.webp 767w, images\portfolio-mobile\mobile-web-site-tecnoduck 1x.webp 480w, images\portfolio-mobile\mobile-web-site-tecnoduck@2x.webp 480w"
+                  alt="Tecnoduck"                  
+                />
+                <p class="adjust__img--description__card">
+                  Tecnoduck es una plataforma de distribución </br>de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <figcaption>
+                <h3>Tecnoduck</h3>
+                <p>Sitio-web</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/golden-star.jpg"
+                srcset="images\portfolio-desktop\desktop-golden-star 1x.webp 2700w, images\portfolio-desktop\desktop-golden-star@2x.webp 2700w, images\portfolio-table\table-golden-star 1x.webp 767w, images\portfolio-table\table-golden-star2x.webp 767w, images\portfolio-mobile\mobile-golden-star 1x.webp 480w, images\portfolio-mobile\mobile-golden-star@2x.webp 480w"
+                alt="Poster de un vs"              
+              />
+              <p class="adjust__img--description__card">
+                VS
+              </p>
+              </div>
+              <figcaption>
+                <h3>Poster Nuevo Orleans vs</h3>
+                <p class="font">Estrella Dorada</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/apps-seafood.jpg"
+                srcset="images\portfolio-desktop\desktop-apps-seafood 1x.webp 2700w, images\portfolio-desktop\desktop-apps-seafood@2x.webp 2700w, images\portfolio-table\tablet-apps-seafood 1x.webp 767w, images\portfolio-table\tablet-apps-seafood@2x.webp 767w, images\portfolio-mobile\mobile-apps-seafood 1x.webp 480w, images\portfolio-mobile\mobile-apps-seafood @2x.webp 480w"
+                alt="Restaurante Seafood"                
+              />
+              <p class="adjust__img--description__card">
+                Restaurante Seafood
+              </p>
+              </div>
+              <figcaption>
+                <h3>Restaurante Seafood</h3>
+                <p>Aplicaciones</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/marketing-prime-project.jpg"
+                srcset="images\portfolio-desktop\desktop-marketing-prime-project 1x.webp 2700w, images\portfolio-desktop\desktop-marketing-prime-project@2x.webp 2700w, images\portfolio-table\tablet-marketing-prime-project 1x.webp 767w, images\portfolio-table\tablet-marketing-lab-project@2x.webp 767w, images\portfolio-mobile\mobile-marketing-prime-project 1x.webp 480w, images\portfolio-mobile\mobile-marketing-prime-project2x.webp 480w"
+                alt="Proyecto Prime"                
+              />
+              <p class="adjust__img--description__card">
+                Proyecto Prime
+              </p>
+              </div>
+              <figcaption>
+                <h3>Proyecto prime</h3>
+                <p>Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/apps-box.jpg"
+                srcset="images\portfolio-desktop\desktop-apps-box 1x.webp 2700w, images\portfolio-desktop\desktop-apps-box@2x.webp 2700w, images\portfolio-table\tablet-mobile-apps-box 1x.webp 767w, images\portfolio-table\tablet-mobile-apps-box@2x.webp 767w, images\portfolio-mobile\mobile-apps-box 1x.webp 480w, images\portfolio-mobile\mobile-apps-box@2x.webp 480w"
+                alt="Proyecto Cajas"                
+              />
+              <p class="adjust__img--description__card">
+                Proyecto Cajas
+              </p>
+              </div>
+              <figcaption>
+                <h3>Proyecto Cajas</h3>
+                <p>Aplicaciones</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/web-site-inspiration.jpg"
+                srcset="images\portfolio-desktop\desktop-web-site-inspiration 1x.webp 2700w, images\portfolio-desktop\desktop-web-site-inspiration@2x.webp 2700w, images\portfolio-table\tablet-web-site-inspiration 1x.webp 767w, images\portfolio-table\tablet-web-site-inspiration@2x.webp 767w, images\portfolio-mobile\mobile-web-site-inspiration 1x.webp 480w, images\portfolio-mobile\mobile-web-site-inspiration@2x.webp 480w"
+                alt="Inspiración sin límites"                
+              />
+              <p class="adjust__img--description__card">
+                Inspiración sín límites
+              </p>
+              </div>
+              <figcaption>
+                <h3>La inspiración no tiene límites</h3>
+                <p>Sitio-web</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/design.jpg"
+                srcset="images\portfolio-desktop\desktop-design 1x.webp 2700w, images\portfolio-desktop\desktop-design@2x.webp 2700w, images\portfolio-table\tablet-design 1x.webp 767w, images\portfolio-table\tablet-design@2x.webp 767w, images\portfolio-mobile\mobile-design 1x.webp 480w, images\portfolio-mobile\mobile-design@2x.webp 480w"
+                alt="Edición limitada"              
+              />
+              <p class="adjust__img--description__card">
+                Edición limitada
+              </p>
+              </div>
+              <figcaption>
+                <h3>Edición limitada</h3>
+                <p>Diseño</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/marketing-lab-project.jpg"
+                srcset="images\portfolio-desktop\desktop-marketing-lab-project 1x.webp 2700w, images\portfolio-desktop\desktop-marketing-lab-project@2x.webp 2700w, images\portfolio-table\tablet-marketing-lab-project 1x.webp 767w, images\portfolio-table\tablet-marketing-lab-project@2x.webp 767w, images\portfolio-mobile\mobile-marketing-lab-project 1x.webp 480w, images\portfolio-mobile\mobile-marketing-lab-project@2x.webp 480w"
+                alt="Proyecto LAB"                
+              />
+              <p class="adjust__img--description__card">
+                Proyecto LAB
+              </p>
+              </div>
+              <figcaption>
+                <h3>Proyecto LAB</h3>
+                <p>Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="none__style">
+            <figure class="adjust__img--applications">
+              <div class="adjust__img--translate">
+              <img
+                src="./images/apps-growing-business.jpg"
+                srcset="images\portfolio-desktop\desktop-apps-growing-business 1x.webp 2700w, images\portfolio-desktop\desktop-apps-growing-business@2x.webp 2700w, images\portfolio-table\tablet-apps-growing-business 1x.webp 767w, images\portfolio-table\tablet-apps-growing-business@2x.webp 767w, images\portfolio-mobile\mobile-apps-growing-business 1x.webp 480w, images\portfolio-mobile\mobile-apps-growing-business@2x.webp 480w"
+                alt="Negocio en Crecimiento"                
+              />
+              <p class="adjust__img--description__card">
+                Negocio en Crecimiento
+              </p>
+              </div>
+              <figcaption>
+                <h3>Negocio en Crecimiento</h3>
+                <p>Aplicaciones</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="banner__footer">
+        <div class="container">
+          <div class="footer--flex">
+            <div class="footer--flex--distribution">
+            <address class="footer__address">
+              <a class="logo" href="./index.html">WebStudio</a>
+              <p class="footer__city">
+                Calz. Ticomán 500, ciudad de<br />México, CDMX México
+              </p>
+              <p>
+                <a class="footer__contact" href="mailto:info@devstudio.com"
+                  >info@example.com</a
+                >
+              </p>
+              <p>
+                <a class="footer__contact" href="tel:+525555296000">+52 55 5529 6000</a>
+              </p>
+            </address>
+            <div class="social">
+              <p>ENCUENTRENOS EN</p>
+              <ul class="social__links">
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <svg class="team__social__icon">
+                      <use href="./images/icons.svg#instagram"></use>
+                     </svg>
+                    <!--<img src="./images/instagram.svg" alt="Instagram" />-->
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank">
+                    <svg class="team__social__icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                     </svg>
+                    <!--<img src="./images/twitter.svg" alt="Twitter" />-->
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <svg class="team__social__icon">
+                      <use href="./images/icons.svg#facebook"></use>
+                     </svg>
+                    <!--<img src="./images/facebook.svg" alt="Facebook" />-->
+                  </a>
+                </li>
+                <li>
+                  <a href="https://co.linkedin.com/" target="_blank">
+                    <svg class="team__social__icon">
+                      <use href="./images/icons.svg#linkedin"></use>
+                     </svg>
+                    <!--<img src="./images/linkedin.svg" alt="LinkedIn" />-->
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+            <div class="social">
+              <p class="footer--subs">SUSCRÍBASE al boletín informativo</p>
+              <div class="footer__email">
+                <input type="email" class="box__email" placeholder="Correo electrónico"/>
+                <button type="submit" class="footer__button">
+                  Susbríbase
+                  <svg class="footer__send" width="24" height="24">
+                    <use href="./images/icons.svg#airplane-send"></use>
+                  </svg>
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
